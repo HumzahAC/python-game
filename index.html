@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNEMPLOYED - Python Game Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <span class="logo-icon">🎮</span>
+                    <h2>UNEMPLOYED</h2>
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#overview" class="nav-link">Game Overview</a>
+                    <a href="#technical" class="nav-link">Technical Features</a>
+                    <a href="#demo" class="nav-link">Interactive Demo</a>
+                    <a href="#development" class="nav-link">Development</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="#download" class="btn btn--primary btn--sm">Download Game</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="game-badge">
+                        <span class="badge-icon">🐍</span>
+                        <span>Python Tkinter Game</span>
+                    </div>
+                    <h1 class="game-title">UNEMPLOYED</h1>
+                    <p class="game-subtitle">A satirical job application adventure with a Matrix twist</p>
+                    <p class="hero-description">
+                        Experience the ultimate job hunting simulator that combines career exploration, 
+                        knowledge testing, and reality-bending choices in this uniquely creative Python game. 
+                        Navigate through Windows XP nostalgia while uncovering the truth about employment in the digital age.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#download" class="btn btn--primary btn--lg">Download Game</a>
+                        <a href="#overview" class="btn btn--outline btn--lg">Explore Features</a>
+                        <a href="https://github.com/unemployed-game" target="_blank" class="btn btn--secondary btn--lg">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="game-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                                <span class="control close"></span>
+                            </div>
+                            <span class="window-title">UNEMPLOYED.exe</span>
+                        </div>
+                        <div class="game-screen">
+                            <div class="screen-content">
+                                <div class="ascii-art">
+                                    <pre id="ascii-display">    UNEMPLOYED
+    ═══════════
+    Loading...
+    [████████░░] 80%</pre>
+                                </div>
+                                <div class="status-line">
+                                    <span class="cursor-blink">Ready to start your adventure_</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Overview Section -->
+    <section id="overview" class="overview-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Game Overview</h2>
+                <p>Discover the unique gameplay mechanics and career paths in this satirical adventure</p>
+            </div>
+            
+            <div class="game-flow">
+                <h3>Game Flow</h3>
+                <div class="flow-steps">
+                    <div class="flow-step" data-step="1">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Username Entry</h4>
+                            <p>Begin your journey with identity validation</p>
+                        </div>
+                    </div>
+                    <div class="flow-step" data-step="2">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Windows XP Desktop</h4>
+                            <p>Navigate the nostalgic interface simulation</p>
+                        </div>
+                    </div>
+                    <div class="flow-step" data-step="3">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>LinkedIn Portal</h4>
+                            <p>Access the professional networking gateway</p>
+                        </div>
+                    </div>
+                    <div class="flow-step" data-step="4">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Career Testing</h4>
+                            <p>Prove your knowledge across domains</p>
+                        </div>
+                    </div>
+                    <div class="flow-step" data-step="5">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Matrix Choice</h4>
+                            <p>Face the ultimate decision: Red or Blue?</p>
+                        </div>
+                    </div>
+                    <div class="flow-step" data-step="6">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h4>Code Cracker</h4>
+                            <p>Solve the final puzzle to escape reality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="career-paths">
+                <h3>Career Paths</h3>
+                <div class="paths-grid">
+                    <div class="career-card" data-career="astronaut">
+                        <div class="career-icon">🚀</div>
+                        <h4>Junior Astronaut</h4>
+                        <p>Space and astronomy knowledge quiz testing your cosmic understanding</p>
+                        <div class="career-questions">
+                            <span class="question-tag">Largest volcano in solar system</span>
+                            <span class="question-tag">Fastest rotating planet</span>
+                            <span class="question-tag">Main component of the Sun</span>
+                        </div>
+                    </div>
+                    
+                    <div class="career-card" data-career="scroller">
+                        <div class="career-icon">📱</div>
+                        <h4>Chief Doom Scroller</h4>
+                        <p>Media and pop culture trivia for the chronically online</p>
+                        <div class="career-questions">
+                            <span class="question-tag">Oscar record holders</span>
+                            <span class="question-tag">Social media platforms</span>
+                            <span class="question-tag">Celebrity fashion moments</span>
+                        </div>
+                    </div>
+                    
+                    <div class="career-card" data-career="consultant">
+                        <div class="career-icon">📊</div>
+                        <h4>Graduate Data Consultant</h4>
+                        <p>Technical data science questions for analytical minds</p>
+                        <div class="career-questions">
+                            <span class="question-tag">Algorithm complexity</span>
+                            <span class="question-tag">Data visualization types</span>
+                            <span class="question-tag">Business intelligence tools</span>
+                        </div>
+                    </div>
+                    
+                    <div class="career-card" data-career="whisperer">
+                        <div class="career-icon">🐾</div>
+                        <h4>Animal Whisperer</h4>
+                        <p>Quirky animal facts and behavior for nature enthusiasts</p>
+                        <div class="career-questions">
+                            <span class="question-tag">Animal sleep patterns</span>
+                            <span class="question-tag">Pregnancy durations</span>
+                            <span class="question-tag">Behavioral responses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Features Section -->
+    <section id="technical" class="technical-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Implementation</h2>
+                <p>Exploring the code architecture and development decisions behind UNEMPLOYED</p>
+            </div>
+            
+            <div class="tech-overview">
+                <div class="tech-stack">
+                    <h3>Technologies Used</h3>
+                    <div class="tech-tags">
+                        <div class="tech-tag primary">Python</div>
+                        <div class="tech-tag">Tkinter GUI</div>
+                        <div class="tech-tag">Random Library</div>
+                        <div class="tech-tag">Data Structures</div>
+                    </div>
+                </div>
+                
+                <div class="technical-highlights">
+                    <h3>Key Technical Features</h3>
+                    <div class="highlights-grid">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🏗️</div>
+                            <h4>Multi-Window GUI Architecture</h4>
+                            <p>Dynamic window management system using Tkinter for seamless navigation</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🗂️</div>
+                            <h4>Nested Dictionary Data Structures</h4>
+                            <p>Complex quiz management system with organized question categories</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🔢</div>
+                            <h4>Random Number Generation</h4>
+                            <p>Sophisticated code-cracking game mechanics with variable difficulty</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">✅</div>
+                            <h4>Input Validation & Error Handling</h4>
+                            <p>Robust user input processing and graceful error management</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🔄</div>
+                            <h4>Dynamic UI Updates</h4>
+                            <p>Real-time interface modifications based on user interactions</p>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🎨</div>
+                            <h4>Windows XP Theme Integration</h4>
+                            <p>Nostalgic visual design with authentic retro computing aesthetics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Interactive Demo</h2>
+                <p>Experience key game mechanics and explore code samples</p>
+            </div>
+            
+            <div class="demo-content">
+                <div class="code-showcase">
+                    <h3>Code Snippets</h3>
+                    <div class="code-tabs">
+                        <button class="code-tab active" data-code="quiz">Quiz System</button>
+                        <button class="code-tab" data-code="matrix">Matrix Choice</button>
+                        <button class="code-tab" data-code="cracker">Code Cracker</button>
+                        <button class="code-tab" data-code="gui">GUI Setup</button>
+                    </div>
+                    
+                    <div class="code-container">
+                        <div class="code-block active" data-code="quiz">
+                            <pre><code class="python"># Quiz System Implementation
+quiz_data = {
+    "Junior Astronaut": {
+        "questions": [
+            "What is the largest volcano in our solar system?",
+            "Which planet rotates the fastest?", 
+            "What is the main component of the Sun?"
+        ],
+        "answers": ["Olympus Mons", "Jupiter", "Hydrogen"]
+    },
+    "Chief Doom Scroller": {
+        "questions": [
+            "Who holds the record for most Oscar wins?",
+            "Which social media platform launched first?",
+            "What was the most talked about fashion moment?"
+        ],
+        "answers": ["Walt Disney", "Friendster", "Met Gala"]
+    }
+}
+
+def conduct_quiz(career_path):
+    """Manage quiz flow for selected career"""
+    questions = quiz_data[career_path]["questions"]
+    score = 0
+    
+    for i, question in enumerate(questions):
+        user_answer = input(f"Q{i+1}: {question}\n> ")
+        if validate_answer(user_answer, career_path, i):
+            score += 1
+            
+    return calculate_result(score, len(questions))</code></pre>
+                        </div>
+                        
+                        <div class="code-block" data-code="matrix">
+                            <pre><code class="python"># Matrix Decision Point
+import tkinter as tk
+from tkinter import messagebox
+
+def matrix_choice():
+    """Present the iconic red pill / blue pill choice"""
+    
+    choice_window = tk.Toplevel()
+    choice_window.title("The Matrix Awaits")
+    choice_window.configure(bg='black')
+    
+    # Matrix-style text
+    matrix_label = tk.Label(
+        choice_window,
+        text="This is your last chance. After this, there is no going back.",
+        fg='#00FF00',  # Matrix green
+        bg='black',
+        font=('Courier', 12)
+    )
+    matrix_label.pack(pady=20)
+    
+    def red_pill():
+        """Choose the harsh reality"""
+        messagebox.showinfo("Red Pill", "Welcome to the real world...")
+        launch_code_cracker()
+        
+    def blue_pill():
+        """Choose blissful ignorance"""
+        messagebox.showinfo("Blue Pill", "Sweet dreams in the Matrix...")
+        return_to_desktop()
+    
+    red_button = tk.Button(choice_window, text="Red Pill", 
+                          command=red_pill, bg='red', fg='white')
+    blue_button = tk.Button(choice_window, text="Blue Pill", 
+                           command=blue_pill, bg='blue', fg='white')
+    
+    red_button.pack(side='left', padx=20, pady=20)
+    blue_button.pack(side='right', padx=20, pady=20)</code></pre>
+                        </div>
+                        
+                        <div class="code-block" data-code="cracker">
+                            <pre><code class="python"># Code Cracker Mini-Game
+import random
+import time
+
+class CodeCracker:
+    def __init__(self):
+        self.target_code = self.generate_code()
+        self.attempts = 0
+        self.max_attempts = 10
+        
+    def generate_code(self):
+        """Generate random 4-digit code"""
+        return [random.randint(0, 9) for _ in range(4)]
+        
+    def check_guess(self, guess):
+        """Analyze guess and provide feedback"""
+        if len(guess) != 4:
+            return "Invalid input: Code must be 4 digits"
+            
+        correct_digits = 0
+        correct_positions = 0
+        
+        for i, digit in enumerate(guess):
+            if digit == self.target_code[i]:
+                correct_positions += 1
+            elif digit in self.target_code:
+                correct_digits += 1
+                
+        return f"Correct positions: {correct_positions}, Correct digits: {correct_digits}"
+        
+    def play_round(self):
+        """Execute one round of code cracking"""
+        print("🔓 CODE CRACKER INITIATED")
+        print("Crack the 4-digit code to escape the Matrix!")
+        
+        while self.attempts < self.max_attempts:
+            guess = input(f"Attempt {self.attempts + 1}/{self.max_attempts}: ")
+            
+            try:
+                guess_digits = [int(d) for d in guess]
+                result = self.check_guess(guess_digits)
+                
+                if guess_digits == self.target_code:
+                    print("🎉 CODE CRACKED! You are THE ONE!")
+                    return True
+                else:
+                    print(f"❌ {result}")
+                    
+            except ValueError:
+                print("❌ Invalid input. Enter 4 digits.")
+                
+            self.attempts += 1
+            
+        print(f"💀 SYSTEM LOCKDOWN! The code was: {''.join(map(str, self.target_code))}")
+        return False</code></pre>
+                        </div>
+                        
+                        <div class="code-block" data-code="gui">
+                            <pre><code class="python"># GUI Setup and Window Management
+import tkinter as tk
+from tkinter import ttk
+import tkinter.font as tkFont
+
+class UnemployedGame:
+    def __init__(self):
+        self.root = tk.Tk()
+        self.setup_main_window()
+        self.setup_styling()
+        
+    def setup_main_window(self):
+        """Configure the main game window"""
+        self.root.title("UNEMPLOYED - Job Application Simulator")
+        self.root.geometry("800x600")
+        self.root.configure(bg='#C0C0C0')  # Windows XP gray
+        
+        # Set window icon (if available)
+        try:
+            self.root.iconbitmap('unemployed_icon.ico')
+        except:
+            pass  # Fallback gracefully
+            
+        # Center the window on screen
+        self.center_window()
+        
+    def setup_styling(self):
+        """Apply Windows XP-style theming"""
+        self.style = ttk.Style()
+        self.style.theme_use('clam')  # Closest to XP
+        
+        # Custom fonts
+        self.title_font = tkFont.Font(family="Arial", size=16, weight="bold")
+        self.button_font = tkFont.Font(family="Arial", size=10)
+        self.mono_font = tkFont.Font(family="Courier New", size=9)
+        
+        # Configure styles
+        self.style.configure('XP.TButton', 
+                           font=self.button_font,
+                           relief='raised')
+                           
+    def center_window(self):
+        """Center the window on the user's screen"""
+        self.root.update_idletasks()
+        width = self.root.winfo_width()
+        height = self.root.winfo_height()
+        x = (self.root.winfo_screenwidth() // 2) - (width // 2)
+        y = (self.root.winfo_screenheight() // 2) - (height // 2)
+        self.root.geometry(f'{width}x{height}+{x}+{y}')
+        
+    def create_desktop_simulation(self):
+        """Simulate Windows XP desktop environment"""
+        desktop_frame = tk.Frame(self.root, bg='#008080')  # XP teal
+        desktop_frame.pack(fill='both', expand=True)
+        
+        # Desktop wallpaper effect
+        wallpaper_label = tk.Label(desktop_frame, 
+                                 text="Windows XP Professional",
+                                 font=self.title_font, 
+                                 fg='white', 
+                                 bg='#008080')
+        wallpaper_label.place(relx=0.02, rely=0.95)
+        
+        # Taskbar simulation
+        taskbar = tk.Frame(desktop_frame, bg='#245EDC', height=40)
+        taskbar.pack(side='bottom', fill='x')
+        
+        start_button = tk.Button(taskbar, text='Start', 
+                               font=self.button_font,
+                               command=self.show_start_menu)
+        start_button.pack(side='left', padx=5, pady=5)
+        
+    def launch(self):
+        """Start the game application"""
+        print("🎮 UNEMPLOYED Game Starting...")
+        self.create_login_screen()
+        self.root.mainloop()</code></pre>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-quiz">
+                    <h3>Try the Quiz System</h3>
+                    <div class="quiz-demo">
+                        <div class="quiz-question">
+                            <h4 id="quiz-question">What is the largest volcano in our solar system?</h4>
+                            <div class="quiz-options">
+                                <button class="quiz-option" data-correct="true">Olympus Mons (Mars)</button>
+                                <button class="quiz-option" data-correct="false">Mount Vesuvius (Earth)</button>
+                                <button class="quiz-option" data-correct="false">Io Volcano (Jupiter's Moon)</button>
+                            </div>
+                            <div id="quiz-result" class="quiz-result"></div>
+                        </div>
+                        <div class="quiz-stats">
+                            <span>Career: <strong>Junior Astronaut</strong></span>
+                            <span>Score: <span id="quiz-score">0</span>/1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Insights Section -->
+    <section id="development" class="development-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Development Insights</h2>
+                <p>Behind the scenes of creating a unique Python gaming experience</p>
+            </div>
+            
+            <div class="insights-content">
+                <div class="insight-card">
+                    <div class="insight-icon">💡</div>
+                    <h3>Creative Concept</h3>
+                    <p>The game originated from the frustrating reality of job hunting in the digital age. By combining satire with interactive elements, UNEMPLOYED transforms a mundane process into an engaging adventure that questions the nature of employment and reality itself.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">🧩</div>
+                    <h3>Problem-Solving Approach</h3>
+                    <p>Each game component presented unique challenges: from creating a Windows XP aesthetic in Tkinter, to balancing quiz difficulty across different knowledge domains, to implementing the code-cracking algorithm with appropriate complexity scaling.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">🏗️</div>
+                    <h3>Architecture Decisions</h3>
+                    <p>The modular design allows for easy expansion of career paths and quiz categories. The state management system ensures smooth transitions between game phases while maintaining user progress and context throughout the experience.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">🎨</div>
+                    <h3>UI/UX Design Philosophy</h3>
+                    <p>The nostalgic Windows XP interface serves both aesthetic and narrative purposes, creating a sense of familiarity that gradually becomes surreal as players progress toward the Matrix revelation. Every design choice reinforces the game's themes.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">🥚</div>
+                    <h3>Easter Eggs & Humor</h3>
+                    <p>Hidden throughout the game are references to pop culture, programming jokes, and subtle social commentary on modern work culture. The "Chief Doom Scroller" career path, in particular, satirizes social media addiction in professional contexts.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <div class="insight-icon">🔮</div>
+                    <h3>Future Enhancements</h3>
+                    <p>Planned updates include additional career paths, multiplayer job fair scenarios, integration with real job APIs for dynamic content, and expanded Matrix sequences with deeper philosophical narratives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-info">
+                    <h2>Download UNEMPLOYED</h2>
+                    <p class="download-description">
+                        Ready to embark on the ultimate job hunting adventure? Download the complete game and experience 
+                        the full Python Tkinter implementation with all career paths, Matrix choices, and code-cracking challenges.
+                    </p>
+                    
+                    <div class="game-specs">
+                        <h3>Game Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <div class="spec-label">Platform</div>
+                                <div class="spec-value">Windows, macOS, Linux</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Requirements</div>
+                                <div class="spec-value">Python 3.7+ with Tkinter</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">File Size</div>
+                                <div class="spec-value">2.3 MB</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-label">Last Updated</div>
+                                <div class="spec-value">August 2025</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="download-features">
+                        <h3>What's Included</h3>
+                        <ul>
+                            <li>Complete Python source code with detailed comments</li>
+                            <li>All 4 career paths with unique quiz questions</li>
+                            <li>Windows XP theme assets and styling</li>
+                            <li>Matrix decision tree implementation</li>
+                            <li>Code-cracking mini-game with multiple difficulty levels</li>
+                            <li>Installation guide and setup instructions</li>
+                            <li>Developer documentation and API reference</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="download-actions">
+                    <div class="download-options">
+                        <a href="#" class="btn btn--primary btn--lg download-btn" data-type="executable">
+                            <span class="btn-icon">⬇️</span>
+                            Download Game (.exe)
+                        </a>
+                        <a href="#" class="btn btn--outline btn--lg download-btn" data-type="source">
+                            <span class="btn-icon">📦</span>
+                            Download Source Code
+                        </a>
+                        <a href="https://github.com/unemployed-game" target="_blank" class="btn btn--secondary btn--lg">
+                            <span class="btn-icon">🐙</span>
+                            View on GitHub
+                        </a>
+                    </div>
+                    
+                    <div class="developer-contact">
+                        <h4>Questions or Feedback?</h4>
+                        <p>Interested in the development process or have ideas for enhancements?</p>
+                        <div class="contact-links">
+                            <a href="mailto:developer@unemployed-game.com" class="contact-link">
+                                <span class="contact-icon">✉️</span>
+                                Email Developer
+                            </a>
+                            <a href="https://linkedin.com/in/unemployed-dev" target="_blank" class="contact-link">
+                                <span class="contact-icon">💼</span>
+                                Connect on LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
